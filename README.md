@@ -3,6 +3,6 @@ JavaScript Projects
 </h2>
 
 <p>
-Welcome to my vanilla JavaScript work! Here I have a my programs I wanted to showcase without the use of
+Welcome to my vanilla JavaScript work! Here I have my programs I wanted to showcase with very minimal, if any, use of
 frameworks or libraries. 
 </p>
