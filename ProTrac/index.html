@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Tracalorie | Meal & Calorie Tracker</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-wrapper red">
+        <div class="container">
+          <a href="#" class="brand-logo center">ProTrac</a>
+          <ul class="right">
+            <li>
+              <a href="#" class="clear-btn red lighten-3">Clear All</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <br />
+
+    <div class="container">
+      <!-- Form Card -->
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Add Meal or Item</span>
+          <form class="col">
+            <div class="row">
+              <div class="input-field col s6">
+                <input type="text" placeholder="Add Item" id="item-name" />
+                <label for="item-name">Meal</label>
+              </div>
+              <div class="input-field col s6">
+                <input
+                  type="number"
+                  placeholder="Add Protein"
+                  id="item-calories"
+                />
+                <label for="item-calories">Protein in Meal</label>
+              </div>
+              <button class="add-btn btn red darken-3">
+                <i class="fa fa-plus"></i> Add Meal
+              </button>
+              <button class="update-btn btn orange">
+                <i class="fa fa-pencil-square-o"></i> Update Meal
+              </button>
+              <button class="delete-btn btn red">
+                <i class="fa fa-remove"></i> Delete Meal
+              </button>
+              <button class="back-btn btn grey pull-right">
+                <i class="fa fa-chevron-circle-left"></i> Back
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Calorie Count -->
+      <h3 class="center-align">
+        <i> Protein Intake: <span class="total-calories">0</span> </i>
+      </h3>
+
+      <!-- Item List -->
+      <ul id="item-list" class="collection"></ul>
+    </div>
+    <br />
+    <br />
+    <br />
+    <footer class="page-footer grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <a
+              href="https://www.t-nation.com/supplements/27-eating-rules-to-control-body-fat"
+              ><h5 class="white-text">
+                <i><u>Smart Guidelines</u></i>
+              </h5></a
+            >
+            <p>
+              With new study after new study regarding ideal nutritional support
+              for people who engage in resistance training consistantly, there
+              are some guidelines that have stood the test of time. Getting in a
+              gram of protein per bodyweight daily. Might seem excessive, but
+              it's worth it. Focusing your carb intake around your workouts and
+              not eating a lot before bed. Newton was right. A body in motion
+              stays in motion. Take the stairs, go for walks, etc. Sitting for
+              long durations consistantly can yield poor results so standing up
+              every once in a while is important. This one might be the most
+              important. GET YOUR SLEEP! Below I'll post some links from
+              T-Nation regarding diet strategy, lifting articles and tips.
+            </p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <ul>
+              <li class="list">
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.t-nation.com/supplements/tip-how-much-protein-should-i-eat"
+                  ><u>Modern Approach to Protein Supplementation</u></a
+                >
+              </li>
+              <br />
+              <li class="list">
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.t-nation.com/diet-fat-loss/tip-carb-intake-for-natural-lifters#:~:text=Having%20carbs%20around%20workouts%20also,the%20most%20efficient%20fuel%20source."
+                  ><u>Proper Carb Intake</u></a
+                >
+              </li>
+              <br />
+              <li class="list">
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.everydayhealth.com/fitness-pictures/ways-to-stay-active-all-day.aspx"
+                  ><u>Small Tips to Stay Active</u></a
+                >
+              </li>
+              <br />
+              <li class="list">
+                <a
+                  class="grey-text text-lighten-3"
+                  href="https://www.t-nation.com/living/things-you-didnt-know-about-sleep"
+                  ><u>The Absolute Importance of Deep Sleep</u></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2021 Weaver Development
+          <a
+            class="grey-text text-lighten-4 right"
+            href="https://www.t-nation.com/"
+            >Addition Resources</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
